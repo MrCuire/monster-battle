@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>勇者斗恶龙 - 无尽战斗</title>
+<link href="./css/style.css" rel="stylesheet" >
+</head>
+<body>
+
+    <div class="battle-stage">
+        <div class="avatar-box" id="player-box">
+            <div class="avatar">🛡️</div>
+            <div>勇者 (HP)</div>
+            <div class="health-bar-container">
+                <div class="health-bar" id="player-hp-bar"></div>
+            </div>
+            <span id="player-hp-text">100/100</span>
+        </div>
+        <div class="vs-text">VS</div>
+        <div class="avatar-box" id="monster-box">
+            <div class="avatar" id="monster-avatar">👾</div>
+            <div>魔王 (HP)</div>
+            <div class="health-bar-container">
+                <div class="health-bar" id="monster-hp-bar"></div>
+            </div>
+            <span id="monster-hp-text">300/300</span>
+        </div>
+    </div>
+
+    <div class="game-board" id="board"></div>
+
+    <div class="controls">
+        <button onclick="startGame()">⚔️ 开始无尽战斗</button>
+    </div>
+
+    <script src="./js/core.js">
+
+    </script>
+</body>
+</html>
